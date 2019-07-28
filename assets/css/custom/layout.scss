@@ -1,0 +1,301 @@
+header {
+	.navbar-brand {
+		img {
+			max-height: 6rem;
+		}
+	}
+	
+	.contact-info {
+		text-transform: uppercase;
+		padding-bottom: 3rem;
+		font-weight: 300;
+	}
+	
+	.mainMenu {
+		li.active {
+			a {
+				color: $link-hover-color;
+			}
+		}
+		a {
+			font-size: 1.2rem;
+			text-transform: uppercase;
+			margin-left: 2rem;
+			text-decoration: none;
+			
+			&.active {
+				color: $link-hover-color;
+			}
+		}
+	}
+	
+	.sub-menu {
+		min-height: 4.6rem;
+	}
+	
+	.sub-menu > div {
+		
+		span.small {
+			color: #b3b2b2;
+			font-size: 0.7rem;
+		}
+		a {
+			line-height: 1rem;
+			font-size: 1.15rem;
+			padding-top: 1.7rem;
+			padding-bottom: 1.7rem;
+			min-height: 4.6rem;
+			max-height: 4.6rem;
+			position: relative;
+			
+			padding-left: 2.6rem;
+			
+			&.active,
+			&:hover {
+				color: #00abe9;
+				text-decoration: none;
+			}
+		}
+		
+	}
+	
+	.sub-menu [data-wrapper="servicesMenu"] {
+		a {
+			text-align: center;
+		}
+	}
+}
+.responsiveMenu { 
+	padding: 1.5rem 3rem;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    top: 0px;
+    left: 0px;
+	background-color: $primary;
+	display: none;
+	
+	
+	.closeResponsiveMenu {
+		position: absolute;
+		left: 1rem;
+		width: 3rem;
+		top: 1.2rem;
+		font-size: 2rem;
+		text-align: center;
+		z-index: 1000;
+	}
+	
+	ul > li> a {
+		line-height: 1rem;
+		font-size: 1.2rem;
+		padding-top: 0.7rem;
+		padding-bottom: 0.7rem;
+		position: relative;
+		padding-left: 2.6rem;
+		color: #fff;
+		text-transform: uppercase;
+		display: block;
+		
+		&.active,
+		&:hover {
+			color: #00abe9;
+			text-decoration: none;
+		}
+	}
+	ul > li > ul {
+		display: none;
+	}
+	ul > li > ul > li> a {
+		line-height: 1rem;
+		font-size: 1.1rem;
+		padding-top: 0.7rem;
+		padding-bottom: 0.7rem;
+		position: relative;
+		padding-left: 2.6rem;
+		color: #92a6c1;
+		display: block; 
+		text-transform: capitalize;
+		
+		&.active,
+		&:hover {
+			color: #00abe9;
+			text-decoration: none;
+		}
+	}
+}
+
+.blockSection {
+	padding-bottom: 6rem;
+}
+.sectionTagline {
+    background-color: $secondary;
+    display: block;
+    margin-top: -5rem;
+	padding: 2rem;
+	padding-bottom: 1rem;
+    z-index: 2;
+	
+	h2 {
+		font-weight: 300;
+	}
+	.readmore {
+		font-size: 0.8rem;
+		color: $white;
+		background: url(../images/css/l-profile.png) no-repeat top right;
+		text-align: right;
+		padding-top: 1.1rem;
+		padding-right: 1.4rem;
+		margin-top: 2rem;
+	}
+}
+.sectionText {
+	margin-top: -4rem;
+    margin-bottom: 3rem;
+	min-height: 15rem;
+	
+	h3 {
+		font-weight: 300;
+		line-height: 2.7rem;
+		padding: 0 2rem;
+	}
+}
+
+
+footer {
+	background: #eaeced url(../images/footer-bg.png) no-repeat center center; 
+	background-repeat: no-repeat;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+    padding: 5rem 0;
+    margin-top: 10rem;
+    padding-top: 0rem;
+		
+		
+	.blockSection {
+		padding-bottom: 0rem;
+	}
+
+	h2 {
+		font-weight: 300;
+	}
+	.sectionTagline {
+	    background-color: #00abe9;
+		display: block;
+		margin-top: -5rem;
+		padding-left: 4rem;
+		padding-right: 3rem;
+		padding-top: 5rem;
+		padding-bottom: 2rem;
+		z-index: 2;
+
+		margin-top: -11rem;
+		position: relative;
+		
+		.readmore {
+			margin-left: 12rem;
+			width: 8rem;
+		}
+	}
+	
+	.socialIcons {
+		position: absolute;
+		margin-left: 4rem;
+		margin-top: 2rem;
+		
+		a {
+			background-color: #00abe9;
+			padding: 5px 8px;
+			color: #fff;
+			text-align: center;
+			border-radius: 5px;
+			display: inline-block;
+			min-width: 30px;
+			margin-right: 1rem;
+			
+			.fa {
+				display: block;
+			}
+		}
+	}
+	
+}
+
+.footerInfo {
+	color: #909191;
+	font-size: 0.7rem;
+	text-transform: uppercase;
+	padding: 1rem 0;
+}
+
+
+
+@media (max-width: 994px) {
+	footer {
+		.sectionTagline .readmore {
+			margin-left: 3rem;
+			width: 8rem;
+		}
+	}
+
+	.sectionTagline {
+		position: relative;
+		margin: 0;
+	}
+	
+	.sectionText {
+		margin-bottom: 3rem;
+		padding-right: 0rem;
+	}
+}
+
+@media (max-width: 768px) {
+	body header .sub-menu {
+		a {
+			color: #fff;
+			line-height: 1.2rem;
+			font-size: 1.15rem;
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+			min-height: auto;
+			max-height: auto;
+			position: relative;
+			padding-left: 1rem;
+			padding-right: 1rem;
+			
+			
+			&:hover::after,
+			&.active:after {
+				bottom: 1rem;
+				left: 0%;
+				border: solid transparent;
+				content: " ";
+				height: 0;
+				width: 0;
+				position: absolute;
+				pointer-events: none;
+				border-color: rgba(136, 183, 213, 0);
+				border-bottom-color: #fff;
+				border-width: 10px;
+				margin-left: 0px;
+				transform: rotate(90deg);
+			}
+			
+		}
+	}
+	
+	.sectionText {
+		margin-top: 2rem;
+	}
+}
+
+@media (max-width: 578px) {
+	footer {
+		#footerNewsletter {
+			margin-top: 7rem;
+		}
+	}
+}
